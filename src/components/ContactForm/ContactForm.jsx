@@ -6,10 +6,6 @@ import { Form } from './ContactForm.styled';
 export const ContactForm = ({ onSubmitContact }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  // state = {
-  //   name: '',
-  //   number: '',
-  // };
 
   const handleChange = e => {
     switch (e.target.name) {
@@ -24,7 +20,6 @@ export const ContactForm = ({ onSubmitContact }) => {
       default:
         return;
     }
-    // this.setState({ [e.target.name]: e.target.value });
   };
 
   const handleSubmit = e => {
